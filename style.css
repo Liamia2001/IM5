@@ -98,7 +98,7 @@ padding: 100px;
     align-items: center;
     height: 100vh;
     margin:0;
-    background: linear-gradient(to bottom, #75b1df, #f077e6);
+    background: linear-gradient(to bottom, #ffffff, #ffbcbc);
     
 }
 
@@ -198,4 +198,4 @@ position: relative;
 .aktiv {
     opacity: 1; 
 }
-*/
+
