@@ -1,60 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Jost:ital,wght@0,300;0,600;0,700;1,600&family=Poppins:wght@300;400&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing; border-box;
-    font-family: "Montserarat", sans-serif;
-    
+body{
+    font-family: 'Monserat', sans-serif;
 }
-/* Header-Styling */
+
 header {
-    position: relative;
-    background-color: rgb(106, 21, 67); /* Hintergrundfarbe des Headers */
-    padding: 90px; /* 20px Abstand oben und unten im Header */
-    color: rgb(133, 17, 17); /* Textfarbe im Header */
+background-color: rgba(158, 53, 170, 0.704);
+padding: 100px;
+}
 
-    
-  }
+.logo{
+    width: 200px; 
+    height: auto;  
+}
 
-  #header-titel {
-    /* Ihre CSS-Stile für das <h1> im Header */
-    font-size: 24px;
-    color: rgb(216, 39, 39);
-    font-family: "Montserarat", sans-serif;
-  }
-   
-  /* Logo-Styling */
-  header img {
-    width: 70px; /* Ändern Sie die Breite entsprechend Ihrer Anforderungen */
-    height: auto; /* Behält das Seitenverhältnis des Logos bei */
-    position: absolute; /* Positionierung für das Logo */
-    top: 0; /* Oben am Header */
-    left: 0; /* Links am Header */
-  }
-img {
-    width: 70px; /* Passen Sie die Breite nach Bedarf an */
-    height: auto; /* Behält das Seitenverhältnis bei */
-    margin-top: 20px; /* Fügt oberen Abstand hinzu */
-  }
+@keyframes fadein {
+    0% { opacity: 0;}
+    100%{ opacity: 1;}
+}
+.img{
+    animation: fadein 0.1s;
+}
+
+.img:hover{
+    z-index: 1;
+}
+
 
 .container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 20px;
+    align-items: center;
+    gap: 5px;
 }
 
 .row {
   display: flex;
-  flex-direction: row; /* Anordnen der Karten in vertikalen Spalten */
+  flex-direction: row; 
   justify-content: space-between;
-  gap: 180px;
+  gap: 100px;
 }
 
 .card {
-    /* Allgemeine Karten-Stile */
+    
     height: 490px;
     width: 120px;
     margin: 30px;
@@ -75,16 +63,18 @@ img {
     width: 190px;
 }
 .heading{
-    color: rgb(255, 0, 0);
-    top: 40%;
-    transform: rotate(90deg);
+    color: rgb(251, 255, 2);
+    top: 50%;
     font-size: 25px;
-    white-space: nowrap; /* Titel ohne Zeilenumbruch */
+    white-space: nowrap; 
     transition: all 300ms ease;
+    transform: translate(-70px, 30px) rotate(90deg);
+   
+   
 }
 .card:hover .heading {
     transform: rotate(0deg);
-    white-space: normal; /* Titel mit Zeilenumbruch */
+    white-space: normal; 
 
 
 }
@@ -97,8 +87,115 @@ img {
     margin: 0 10px;
 }
 .card:hover .info{
-    top: 60%;
+    top: 50%;
 
 
 }
 
+.slideshowcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    background: linear-gradient(to bottom, #75b1df, #f077e6);
+    
+}
+
+.slideshow{
+width: 50vw;
+height:50vh;
+box-shadow: 0px 0px 10px gray;
+position: relative;
+
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.slide-bild{
+    width: 100%;
+}
+
+.slide-textbereich {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 70%;
+    background-color: rgba(0, 0, 0, 0.777);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Montserarat", sans-serif;
+    padding: 0 15% 0 15%;
+}
+
+.slide-ueberschrift{
+    font-size: 1.5em;
+    margin: 50px 0 5px 0;
+}
+.slide-beschreibung{
+    font-size: 1em;
+}
+
+.pfeil{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    color: rgb(255, 255, 255, 0.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.pfeil:hover {
+    color: white;
+
+}
+
+.pfeil-links{
+    left: 0;
+}
+
+.pfeil-rechts{
+    right: 0;
+}
+
+.indikatorenliste{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    list-style-type: none; 
+    font-size: 20px;
+    display: flex; 
+    justify-content: center; 
+    margin: 0;
+    padding: 0;
+}
+
+.indikator{
+    padding: 0 10px;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 2s;
+}
+
+.aktiv {
+    opacity: 1; 
+}
+*/

@@ -8,10 +8,12 @@
   </head>
   <body>
     <header>
-        <img src="Images/Logo FOU_vertikal_rgb.png" alt="Logo FOU">
-        <h1 id="header-titel">Vegan Lokal - Lehrprojekt Bildwelt von Lia Monnier</h1>
-        <h4 id="Mein_Bachelorlehrprojekt">Im Rahmen meines Lehrprojektes für meine Bachelorarbeit kreiere ich für FOU, die Glace Untermarke der Gelateria di Berna eine Bildwelt, anhand von Stopmotion Bildern. Die Vegangenstängelglacen eignen sich dazu bestens, denn jede davon enthlt sehr spezielle Komponenten.</h4>
+     <div class="logo">
+    <img src="Images/Logo FOU_vertikal_rgb.png" alt="Logo">
+     </div>
     </header>
+    <script src="imageadder.js" class="img"></script>
+   
     <div class="container">
         <div class="row">
 
@@ -82,13 +84,68 @@
 
             <div class="card" style="background-image: url(Images/Hafer_Aprikose.png);">
             <h1 class="heading">HAFER - APRIKOSE</h1>
-            <p class="info">Was in den 80er die MACH1 war - ist heute Aprikosen - Hafer. Ein cremiger Haferdrink-Kern wird durch einen fruchtigen Aprikosenmantel umhüllt. Boom! </p>
+            <p class="info">Was in den 80er die MACH1 war - ist heute Aprikosen - Hafer. Ein cremiger Haferdrink-Kern wird durch einen <br> Aprikosenmantel umhüllt. Boom! </p>
             
         
         </div>
       </div>
 
     </div>
-    <script src="script.js"></script>
+<div class="slideshowcontainer">
+    <div class= "slideshow"> 
+         <div class="slide">
+            <img src="Images/making_off_frau_mit_kamera.jpg" alt="Frau mit Kamera" class="slide-bild">
+            <div class="slide-textbereich">
+                <h3 class="slide-ueberschrift">MAKING OFF BILDER</h3>
+                <p class="slide-beschreibung">01.04.2024</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="Images/making_off_prozess.jpg" alt="Prozess" class="slide-bild">
+            <div class="slide-textbereich">
+                <h3 class="slide-ueberschrift">ARRANGIEREN DER SORTEN</h3>
+                <p class="slide-beschreibung">Immer mit dazu passenden Gegenständen</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="Images/making_off_food.jpg" alt="Food" class="slide-bild">
+            <div class="slide-textbereich">
+                <h3 class="slide-ueberschrift">TRY OUT</h3>
+                <p class="slide-beschreibung">Probieren geht über studieren</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="Images/making_of_kamera.jpg" alt="Kamera" class="slide-bild">
+            <div class="slide-textbereich">
+                <h3 class="slide-ueberschrift">BEARBEITUNG</h3>
+                <p class="slide-beschreibung">Nach dem Shooting wurden die Bilder in Photoshop bearbeitet und animiert</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="Images/making_off_studio.jpg" alt="Studio" class="slide-bild">
+            <div class="slide-textbereich">
+                <h3 class="slide-ueberschrift">STUDIO</h3>
+                <p class="slide-beschreibung">Einblick ins Studio wo die Aufnahmen entstanden sind</p>
+            </div>
+        </div>
+        <a class="pfeil pfeil-links"  onclick="umschalten(-1)"><span>&#10094;</span></a>
+        <a class="pfeil pfeil-rechts" onclick="umschalten(1)"><span>&#10095;</span></a>
+        <ol class="indikatorenliste">
+
+            <li class="indikator" onclick="springeZuEintrag(0)">&#8226;</li>
+            <li class="indikator" onclick="springeZuEintrag(1)" >&#8226;</li>
+            <li class="indikator" onclick="springeZuEintrag(2)">&#8226;</li>
+            <li class="indikator" onclick="springeZuEintrag(3)">&#8226;</li>
+            <li class="indikator" onclick="springeZuEintrag(4)">&#8226;</li>
+       
+        </ol>
+
+    </div>
+</div>
+<script src="slideshow.js"></script> 
   </body>
 </html>
