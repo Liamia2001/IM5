@@ -5,104 +5,86 @@
     padding: 0;
     box-sizing; border-box;
     font-family: "Montserarat", sans-serif;
-}
-
-header{
-    background-color: blueviolet;
-
-}
-li{
-    list-style: none;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-}
-
-.navbar{
-    min-height: 70;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-
-}
-.nav-menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
     
 }
-.nav-branding{
-    font-size: 2rem;
+/* Header-Styling */
+header {
+    position: relative;
+    background-color: rgb(106, 21, 67); /* Hintergrundfarbe des Headers */
+    padding: 90px; /* 20px Abstand oben und unten im Header */
+    color: rgb(133, 17, 17); /* Textfarbe im Header */
 
-}
+    
+  }
 
-.nav-link{
-    transition: 0.7s ease;
-}
-
-.nav-link:hover{
-    color: bisque;
-
-}
-
-.hamburger{
-    display: none;
-    cursor: pointer;
-}
-.bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: aqua;
-}
-
-@media(max-width:768px){
-    .hamburger {
-        display: block;
-    }
-
-    .hamburger.active .bar
-}
+  #header-titel {
+    /* Ihre CSS-Stile für das <h1> im Header */
+    font-size: 24px;
+    color: rgb(216, 39, 39);
+    font-family: "Montserarat", sans-serif;
+  }
+   
+  /* Logo-Styling */
+  header img {
+    width: 70px; /* Ändern Sie die Breite entsprechend Ihrer Anforderungen */
+    height: auto; /* Behält das Seitenverhältnis des Logos bei */
+    position: absolute; /* Positionierung für das Logo */
+    top: 0; /* Oben am Header */
+    left: 0; /* Links am Header */
+  }
+img {
+    width: 70px; /* Passen Sie die Breite nach Bedarf an */
+    height: auto; /* Behält das Seitenverhältnis bei */
+    margin-top: 20px; /* Fügt oberen Abstand hinzu */
+  }
 
 .container{
     display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row; /* Anordnen der Karten in vertikalen Spalten */
+  justify-content: space-between;
+  gap: 180px;
 }
 
 .card {
-    height: 270px;
-    width: 90px;
-    margin: 0 15px ;
+    /* Allgemeine Karten-Stile */
+    height: 490px;
+    width: 120px;
+    margin: 30px;
+    margin-bottom: 50px;
+    padding: 30px;
+   
     background-size: cover;
-    text-align: center;
+    text-align: left;
+
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: -1px -79px 23px -8px rgba(0, 0, 0, 75) inset,0px 11px 23px -8px rgba(0, 0, 0, 0.75);
     transition: all 300ms ease;
+    background-color: rgb(94, 73, 107);
+    
 }
+
 
 .card:hover{
     width: 190px;
 }
 .heading{
-    color: rgb(121, 25, 25);
-    position: relative;
-    top: 58%;
+    color: rgb(255, 0, 0);
+    top: 40%;
     transform: rotate(90deg);
-    font-size: 22px;
+    font-size: 25px;
+    white-space: nowrap; /* Titel ohne Zeilenumbruch */
     transition: all 300ms ease;
 }
 .card:hover .heading {
     transform: rotate(0deg);
+    white-space: normal; /* Titel mit Zeilenumbruch */
 
 
 }
@@ -110,7 +92,7 @@ a{
     color: #dadada;
     position: relative;
     top: 100%;
-    font-size: 10px;
+    font-size: 15px;
     transition: all 300ms ease;
     margin: 0 10px;
 }
