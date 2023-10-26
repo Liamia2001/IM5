@@ -1,16 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Jost:ital,wght@0,300;0,600;0,700;1,600&family=Poppins:wght@300;400&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Jost:ital,wght@0,300;0,600;0,700;1,600&family=Montserrat:ital,wght@1,800&family=Poppins:wght@300;400&display=swap');
+
+
 body{
-    font-family: 'Monserat', sans-serif;
+    font-family: 'Monserrat', sans-serif;
 }
+
 
 header {
-background-color: rgba(158, 53, 170, 0.704);
-padding: 100px;
+background-color: rgba(194, 53, 209, 0.704);
+padding: 50px;
 }
 
-.logo{
-    width: 200px; 
-    height: auto;  
+.ueberschriftheader{
+    padding: 60px 0 60px 30px;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    color: rgb(251, 255, 2);
+    text-align: center;
 }
 
 @keyframes fadein {
@@ -37,8 +46,7 @@ padding: 100px;
 .row {
   display: flex;
   flex-direction: row; 
-  justify-content: space-between;
-  gap: 100px;
+  justify-content: space-around;
 }
 
 .card {
@@ -98,7 +106,7 @@ padding: 100px;
     align-items: center;
     height: 100vh;
     margin:0;
-    background: linear-gradient(to bottom, #ffffff, #ffbcbc);
+    background-color: rgba(194, 53, 209, 0.704);
     
 }
 
@@ -131,8 +139,8 @@ position: relative;
     bottom: 0;
     right: 0;
     top: 70%;
-    background-color: rgba(0, 0, 0, 0.777);
-    color: rgb(255, 255, 255);
+    background-color: rgba(194, 53, 209, 0.704);
+    color: rgb(251, 255, 2);
     text-align: center;
     font-family: "Montserarat", sans-serif;
     padding: 0 15% 0 15%;
@@ -140,10 +148,11 @@ position: relative;
 
 .slide-ueberschrift{
     font-size: 1.5em;
-    margin: 50px 0 5px 0;
+    margin: 9px 2 9px 2;
 }
 .slide-beschreibung{
     font-size: 1em;
+    color: rgb(251, 255, 2);
 }
 
 .pfeil{
@@ -199,3 +208,11 @@ position: relative;
     opacity: 1; 
 }
 
+#bildgalerie {
+    width: 100%; /* Full width */
+    height: 1800px; /* Fixed height, adjust as needed */
+    background-color: rgb(94, 73, 107); /* Background color, change as desired */
+    position: relative; /* Make it a positioned container */
+    overflow: hidden; /* Hide overflow content */
+  }
+  
