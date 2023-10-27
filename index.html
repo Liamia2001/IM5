@@ -5,16 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOU Glace</title>
     <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
     <header>
      <div class="logo">
     <img src="Images/Logo FOU_vertikal_rgb.png" alt="Logo"width="100">
-    <h1 class="ueberschriftheader">LOKAL VEGAN - MEIN LEHRPROJEKT:<br> GESTALTUNG EINER BILDWELT FÜR FOU</h1>
-
+    
+    <h1 class="ueberschriftheader">MEIN LEHRPROJEKT:<br> GESTALTUNG EINER BILDWELT FÜR FOU</h1>
      </div>
     </header>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="Images/400_600_glace1.jpg" class="glace1" alt="glace" width="350">
+            <img src="Images/400_600_glace2.jpg" class="glace2" alt="glace" width="350">
+            <img src="Images/400_600_glace3.jpg" class="glace3" alt="glace" width="350">
+            <img src="Images/400_600_glace4.jpg" class="glace4" alt="glace" width="350">
+        </div>
+    </div>
+   
     <div class="container">
+    
         <div class="row">
 
             <div class="card" style="background-image: url(Images/Caffe_dorzo.png);">
@@ -89,9 +100,13 @@
         
         </div>
       </div>
-
     </div>
+    <div class="schrift">
+        <h1>Fou ist <span class="auto-type"></span></h1>
+    </div>
+    
 <div class="slideshowcontainer">
+    
     <div class= "slideshow"> 
          <div class="slide">
             <img src="Images/making_off_frau_mit_kamera.jpg" alt="Frau mit Kamera" class="slide-bild">
@@ -146,15 +161,15 @@
 
     </div>
 </div>
-
-
-<div id="bildgalerie"> </div>
-
-
+<div id="bildgalerie">  
+<p class="click-instruction"> CLICKE RANDOM AUF DIE FLÄCHE UM DIR DIE BILDCOLLAGE ANZUSEHEN </p>
+</div>
+  
 <script src="slideshow.js"></script> 
-<script src="imageadder.js" class="img"></script>   
+<script src="imageadder.js" class="img"></script>  
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="autotype.js"></script>
+<script src="parallax.js"></script>
 
-
-
-  </body>
+</body>
 </html>
