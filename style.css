@@ -208,17 +208,14 @@ position: relative;
 }
 
 #bildgalerie {
-    width: 100%; /* Full width */
-    height: 1800px; /* Fixed height, adjust as needed */
-    background-color: rgb(94, 73, 107); /* Background color, change as desired */
-    position: relative; /* Make it a positioned container */
-    overflow: hidden; /* Hide overflow content */
+    background: transparent;
+    padding: 0;
   }
   
 .schrift{
     width:100%;
     height: 100%;
-    background-color: rgb(187, 0, 255);
+    background-color: rgb(225, 21, 163);
     color:  rgb(251, 255, 2);
     display: flex;
     align-items: center;
@@ -251,14 +248,66 @@ position: relative;
 }
 
 .click-instruction {
-    font-size: 25px;
+    font-size: 60px;
     font-family: 'Monserrat', sans-serif;
     color: rgb(251, 255, 2);
     text-align: center;
     font-weight: 900;
-    padding: 30PX 20PX;
+    padding: 30PX 20px;
+    background-color: rgb(94, 73, 107);
 }
 
+.glacewechsel {
+    width: 100%;
+    height: 100vh;
+    padding: 10px 3%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.glacewechsel1 {
+    font-size: 75px;
+    position: relative;
+    z-index: 2;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgb(94, 73, 107);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.glacewechsel1:hover {
+    -webkit-text-fill-color: rgb(251, 255, 2);
+    transform: translateY(-10px);
+}
+
+.img-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    background-color: rgba(194, 53, 209, 0.704);
+    background-size: contain;
+    background-position: center;
+    transition: background-image 0.5s;
+}
+
+.glacewechsel:hover .img-box {
+    background-image: url(Images/Cioccolato_nibs.png);
+    background-size: 30%;
+    background-position: center 80px;
+
+}
+
+.glacewechsel .glacewechsel1:nth-child(2):hover ~ .img-box {
+    background-image: url(Images/Quitte_Verveine.png);
+}
+
+.glacewechsel .glacewechsel1:nth-child(3):hover ~ .img-box {
+    background-image: url(Images/Hafer_Aprikose.png);
+}
 
 
   
